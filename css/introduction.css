@@ -1,0 +1,49 @@
+.introduction {
+    max-width: 1180px;
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    gap: 245px;
+}
+
+.media-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.about-mountains {
+    max-width: 350px;
+    max-height: 400px;
+}
+
+.about-video {
+    position: absolute;
+    max-width: 350px;
+    max-height: 400px;
+    z-index: 10;
+    left: 40%;
+    top: 130px;
+}
+
+.about-video .about-video-btn {
+    background-image: url(../imgPC/button-play-main.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 65px;
+}

@@ -1,0 +1,77 @@
+.wrapper-dark-blue {
+    background-color: #1A3E3E;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 15;
+    color: #F3F5F4;
+}
+
+.footer-finish-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.title-footer {
+    margin: 0;
+}
+
+.wrapper-footer-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-block {
+    gap: 50px;
+}
+
+.history-company {
+    max-width: 460px;
+    width: 100%;
+}
+
+.wrapper-links {
+    display: flex;
+    gap: 25px;
+
+}
+
+.social-network-list {
+    display: flex;
+    gap: 16px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 280px;
+    width: 100%;
+}
+
+.services-item {
+    display: flex;
+    gap: 10px;
+}
+
+.background-black {
+    width: 100%;
+    background-color: #18121E;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.end-of-page {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.list-last-footer {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+}

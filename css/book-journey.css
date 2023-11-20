@@ -1,0 +1,112 @@
+.background {
+    background-image: url(../imgPC/mainBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.promo-inner {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+
+.book-journey {
+    max-width: 1180px;
+    color: #FDFDFD;
+}
+
+.enjoy-travelling-title {
+    font-size: 50px;
+    font-family: "Next-Art-Bold";
+    max-width: 1080px;
+    font-weight: bold;
+    line-height: 140%;
+    letter-spacing: 1px;
+}
+
+
+.wrapper-main-form {
+    max-width: 1180px;
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(3px);
+}
+
+.main-form {
+    display: flex;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.date-range-group {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.date-range-group .inputs-style {
+    border: none;
+}
+
+.find-buttom-form {
+    display: flex;
+    padding: 16px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #FDFDFD;
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.192px;
+    max-width: 215px;
+    height: 52px;
+    color: #1A3E3E;
+}
+
+.inputs-style {
+    display: flex;
+    height: 52px;
+    padding: 0px 16px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid;
+    color: #FDFDFD;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 10px;
+}
+
+.option-style {
+    color: #FDFDFD;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.label-style {
+    font-size: 14px;
+    padding-left: 10px;
+}
+

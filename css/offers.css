@@ -1,0 +1,38 @@
+.offers {
+    max-width: 1180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+.wrapper-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-program {
+    display: flex;
+    gap: 20px;
+}
+
+.title-for-description {
+    margin: 0;
+}
+.text-description {
+    margin: 0;
+    font-size: .875rem;
+    max-width: 514px
+}
+ .prise-of-programm {
+    max-width: 236px;
+    padding: 20px 24px;
+}
+
+.list-pictures {
+    display: grid;
+    grid-template-columns: auto auto; /* Две колонны, размером с содержимое */
+    grid-template-rows: auto auto; /* Два ряда, размером с содержимое */
+    gap: 10px; /* Расстояние между элементами сетки */
+    padding: 0; /* Обнуляем внутренние отступы */
+}

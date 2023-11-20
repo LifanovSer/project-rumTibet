@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('NEXTART.woff2') format('woff2'),
+        url('NEXTART.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

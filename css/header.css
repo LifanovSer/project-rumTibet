@@ -1,0 +1,28 @@
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    max-width: 1180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-opportunities {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-item {
+    color: #FDFDFD;
+}
+
+.button-consultation {
+    margin-left: 30px;
+}

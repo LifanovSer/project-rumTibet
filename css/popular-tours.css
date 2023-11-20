@@ -1,0 +1,126 @@
+.popular-tours {
+    max-width: 1180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin: 80px auto;
+    align-items: center;
+}
+
+.popular-tours-titles {
+    text-align: center;
+}
+
+.popular-tours-list {
+    display: flex;
+    gap: 20px;
+
+}
+
+.the-tour {
+    max-width: 380px;
+    width: 100%;
+    height: 500px;
+    border-radius: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.lake-near-mountains {
+    background-image: url(../imgPC/the-in-mountains.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.night-in-mountains {
+    background-image: url(../imgPC/at-the-mountains.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.yoga-in-mountains {
+    background-image: url(../imgPC/yoga-in-mountains.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wrapper-tour-rating {
+    display: flex;
+    width: 65px;
+    padding: 4px 8px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px 0px 0px 4px;
+    background: rgba(253, 253, 253, 0.40);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    right: 0;
+    top:50px;
+}
+
+.size-rating-button {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 16px 36px;
+}
+
+.description-popular-tour {
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(3px);
+    width: 380px;
+    height: 500px;
+    padding: 30px 32px 20px 32px;
+    color: #FDFDFD;
+    transform: translateY(390px); 
+}
+
+.wrapper-title-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-tour {
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+.rating-of-tour {
+    font-size: 14px;
+}
+
+.prise-of-tour {
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90px;
+    height: 40px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.30);
+    align-self: center;
+}
+
+
+.short-description {
+    font-size: 14px;
+}
+
+.text-description-and-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 90px;
+}
+
+.text-popular-tour {
+    font-size: 1rem;
+}
+
