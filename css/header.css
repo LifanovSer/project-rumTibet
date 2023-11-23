@@ -7,15 +7,19 @@
     justify-content: center;
 }
 
-.nav {
-    max-width: 1180px;
-    width: 100%;
+.header__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    max-width: 1180px;
+    width: 100%;
+    padding: 20px;
 }
 
 .nav-opportunities {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
 }
 

@@ -17,10 +17,11 @@
         <link rel="stylesheet" href="./css/photo-report.css">
         <link rel="stylesheet" href="./css/get-useful-mailing.css">
         <link rel="stylesheet" href="./css/footer.css">
+        <script src="./js/open-menu.js" defer></script>
     </head>
     <body>
         <header class="header">
-            <nav class="nav">
+            <div class="header__container">
                 <picture>
                     <source
                         srcset="./imgMobile/logoForMobile.svg"
@@ -32,26 +33,57 @@
                         src="./imgPC/travellingInTibetLogo.svg" alt="логотип
                         компании">
                 </picture>
-                <ul class="nav-opportunities">
-                    <li class="nav-item">Главная</li>
-                    <li class="nav-item">Про гида</li>
-                    <li class="nav-item">Программа тура</li>
-                    <li class="nav-item">Стоимость</li>
-                    <li class="nav-item">Блог</li>
-                    <li class="nav-item">Контакты</li>
-                    <li class="nav-item nav-item-button"> <button
-                            class="common-style-button button-consultation">консультация</button></li>
-                </ul>
-            </nav>
+                <div class="menu___icon">
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-opportunities">
+                        <li class="nav-item">Главная</li>
+                        <li class="nav-item">Про гида</li>
+                        <li class="nav-item">Программа тура</li>
+                        <li class="nav-item">Стоимость</li>
+                        <li class="nav-item">Блог</li>
+                        <li class="nav-item">Контакты</li>
+                        <li class="nav-item nav-item-button">
+                            <button class="common-style-button
+                                button-consultation">Консультация</button>
+                        </li>
+                    </ul>
+
+                    <ul class="nav-opportunities-mobile">
+                        <li class="nav-item">
+                            <img src="./imgPC/arrowFooter.svg" alt="стрелка">
+                            <a href="#" class="nav-link">Про гида</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./imgPC/arrowFooter.svg" alt="стрелка">
+                            <a href="#" class="nav-link">Программа тура</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./imgPC/arrowFooter.svg" alt="стрелка">
+                            <a href="#" class="nav-link">Стоимость</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./imgPC/arrowFooter.svg" alt="стрелка">
+                            <a href="#" class="nav-link">Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./imgPC/arrowFooter.svg" alt="стрелка">
+                            <a href="#" class="nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main class="main">
             <div class="background">
                 <div class="promo-inner">
                     <section class="book-journey">
-                        <h1 class="enjoy-travelling-title">Насладись прогулкой в
-                            горах <br>с командой единомышленников</h1>
-                        <div class="wrapper-main-form">
 
+                        <div class="wrapper-main-form">
+                            <h1 class="enjoy-travelling-title">Насладись
+                                прогулкой в
+                                горах с командой единомышленников</h1>
                             <form id="form" class="main-form" action="/submit"
                                 method="post" accept-charset="UTF-8">
                                 <div class="form-group">
@@ -86,20 +118,31 @@
                                         диапазон</label>
                                 </div>
                                 <div class="form-group">
-                                    <select name="select-quantity"
-                                        id="select-quantity"
-                                        class="inputs-style">
-                                        <option class="option-style" value="3">участники</option>
-                                        <option class="option-style" value="3">4</option>
-                                        <option class="option-style" value="4">5</option>
-                                        <option class="option-style" value="5">6</option>
-                                    </select>
-                                    <label for="select-quantity"
-                                        class="label-style">минимум 4 человека</label>
+                                    <div class="wrapper-last-select">
+                                        <select name="select-quantity"
+                                            id="select-quantity"
+                                            class="inputs-style last-select">
+                                            <option class="option-style"
+                                                value="3">участники</option>
+                                            <option class="option-style"
+                                                value="3">4</option>
+                                            <option class="option-style"
+                                                value="4">5</option>
+                                            <option class="option-style"
+                                                value="5">6</option>
+                                        </select>
+                                        <label for="select-quantity"
+                                            class="label-style">минимум 4
+                                            человека</label>
+                                    </div>
+                                    <button type="submit" id="find-proggram"
+                                        class="find-buttom-form inside-form">Найти
+                                        программу</button>
                                 </div>
-                                <button type="submit" id="find-proggram"
-                                    class="find-buttom-form">Найти программу</button>
                             </form>
+                            <button type="submit" id="find-proggram"
+                            class="find-buttom-form outside-form">Найти
+                            программу</button>
                         </div>
                     </section>
                 </div>
@@ -647,8 +690,9 @@
                                     position-button-submit" type="submit">Подписаться
                                     на новости</button>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+
                     <a href="#" class="description-text-form">
                         подписываясь на новости, вы автоматически соглашаетесь с
                         условиями обработки персональных данных и правилами
@@ -698,19 +742,19 @@
                         <h3 class="title-footer">Наши услуги</h3>
                         <ul class="services">
                             <li class="services-item footer-text-style">
-                                <img  src="./imgPC/arrowFooter.svg"
+                                <img src="./imgPC/arrowFooter.svg"
                                     alt="стрелка">
                                 <a href="#" class="footer-link">Прогулки в горы
                                     летом</a>
                             </li>
                             <li class="services-item footer-text-style">
-                                <img  src="./imgPC/arrowFooter.svg"
+                                <img src="./imgPC/arrowFooter.svg"
                                     alt="стрелка">
                                 <a href="#" class="footer-link"> Зимние походы в
                                     горы</a>
                             </li>
                             <li class="services-item footer-text-style">
-                                <img  src="./imgPC/arrowFooter.svg"
+                                <img src="./imgPC/arrowFooter.svg"
                                     alt="стрелка">
                                 <a href="#" class="footer-link"> Посещение
                                     храмов в горах</a>
@@ -779,6 +823,11 @@
     </body>
 </html>
 
+<!-- <button class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</button> -->
 <!-- <li class="photo-report-item">
     <div class="background-first-image"></div>
  </li>
