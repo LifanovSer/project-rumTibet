@@ -17,7 +17,9 @@
         <link rel="stylesheet" href="./css/photo-report.css">
         <link rel="stylesheet" href="./css/get-useful-mailing.css">
         <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/style-custom-select.css">
         <script src="./js/open-menu.js" defer></script>
+        <script src="./js/select.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -38,12 +40,12 @@
                 </div>
                 <nav class="nav">
                     <ul class="nav-opportunities">
-                        <li class="nav-item">Главная</li>
-                        <li class="nav-item">Про гида</li>
-                        <li class="nav-item">Программа тура</li>
-                        <li class="nav-item">Стоимость</li>
-                        <li class="nav-item">Блог</li>
-                        <li class="nav-item">Контакты</li>
+                        <li class="nav-item"> <a href="#">Главная</a></li>
+                        <li class="nav-item"><a href="#">Про гида</a></li>
+                        <li class="nav-item"><a href="#">Программа тура </a></li>
+                        <li class="nav-item"><a href="#">Стоимость</a></li>
+                        <li class="nav-item"><a href="#">Блог</a></li>
+                        <li class="nav-item"><a href="#">Контакты</a></li>
                         <li class="nav-item nav-item-button">
                             <button class="common-style-button
                                 button-consultation">Консультация</button>
@@ -84,24 +86,25 @@
                             <h1 class="enjoy-travelling-title">Насладись
                                 прогулкой в
                                 горах с командой единомышленников</h1>
-                            <form id="form" class="main-form" action="/submit"
+                            <form id="form-main" class="main-form" action="/submit"
                                 method="post" accept-charset="UTF-8">
-                                <div class="form-group">
-                                    <select name="select-country"
-                                        id="select-country"
-                                        class="inputs-style">
-                                        <option class="option-style"
-                                            value="location for
-                                            traveling">Локация для тура</option>
-                                        <option class="option-style"
-                                            value="RUSSIA">РОССИЯ</option>
-                                        <option class="option-style"
-                                            value="USA">США</option>
-                                        <option class="option-style"
-                                            value="EUROPE">ЕВРОПА</option>
-                                        <option class="option-style"
-                                            value="ASIA">АЗИЯ</option>
-                                    </select>
+                                <div class="form-group dropdown">
+                                    <button class="dropdown_button"> Локация для
+                                        тура </button>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__list-item"
+                                            data-value="location">Локация для
+                                            тура</li>
+                                        <li class="dropdown__list-item"
+                                            data-value="usa">США</li>
+                                        <li class="dropdown__list-item"
+                                            data-value="russia">РОССИЯ</li>
+                                        <li class="dropdown__list-item"
+                                            data-value="europe">ЕВРОПА</li>
+                                    </ul>
+                                    <input id="select-country" type="text"
+                                        name="select-location" value=""
+                                        class="dropdown__input-hidden">
                                     <label for="select-country"
                                         class="label-style">выберите из списка</label>
                                 </div>
@@ -117,20 +120,24 @@
                                     <label for="start-date" class="label-style">Укажите
                                         диапазон</label>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group dropdown">
                                     <div class="wrapper-last-select">
-                                        <select name="select-quantity"
-                                            id="select-quantity"
-                                            class="inputs-style last-select">
-                                            <option class="option-style"
-                                                value="3">участники</option>
-                                            <option class="option-style"
-                                                value="3">4</option>
-                                            <option class="option-style"
-                                                value="4">5</option>
-                                            <option class="option-style"
-                                                value="5">6</option>
-                                        </select>
+                                        <button class="dropdown_button">Выберите
+                                            количество участников</button>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__list-item"
+                                                data-value="quantity">Выберите
+                                                количество участников</li>
+                                            <li class="dropdown__list-item"
+                                                data-value="4">4</li>
+                                            <li class="dropdown__list-item"
+                                                data-value="5">5</li>
+                                            <li class="dropdown__list-item"
+                                                data-value="6">6</li>
+                                        </ul>
+                                        <input id="select-quantity" type="text"
+                                            name="select-quantity" value=""
+                                            class="dropdown__input-hidden">
                                         <label for="select-quantity"
                                             class="label-style">минимум 4
                                             человека</label>
@@ -140,9 +147,9 @@
                                         программу</button>
                                 </div>
                             </form>
-                            <button type="submit" id="find-proggram"
-                            class="find-buttom-form outside-form">Найти
-                            программу</button>
+                            <button type="submit" id="find-proggram-outside"
+                                class="find-buttom-form outside-form">Найти
+                                программу</button>
                         </div>
                     </section>
                 </div>
