@@ -16,7 +16,6 @@
 .popular-tours-list {
     display: flex;
     gap: 20px;
-
 }
 
 .the-tour {
@@ -27,6 +26,9 @@
     position: relative;
     overflow: hidden;
 }
+
+
+  
 
 .lake-near-mountains {
     background-image: url(../imgPC/the-in-mountains.png);
@@ -79,6 +81,12 @@
     padding: 30px 32px 20px 32px;
     color: #FDFDFD;
     transform: translateY(390px); 
+    transition: transform 1.9s;
+}
+
+.move__description {
+    transform: translateY(0px); 
+    transition: transform 1.9s;
 }
 
 .wrapper-title-price {

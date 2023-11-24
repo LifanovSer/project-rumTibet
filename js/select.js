@@ -55,3 +55,9 @@ if (window.NodeList && !Node.prototype.forEach) {
       }
     });
   });
+
+
+
+  formCollection.addEventListener('submit', function(event) {
+    event.preventDefault()
+  })

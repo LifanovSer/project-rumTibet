@@ -18,8 +18,11 @@
         <link rel="stylesheet" href="./css/get-useful-mailing.css">
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/style-custom-select.css">
+        <link rel="stylesheet" href="./css/video-open-style.css">
         <script src="./js/open-menu.js" defer></script>
         <script src="./js/select.js" defer></script>
+        <script src="./js/open-video.js" defer></script>
+        <script src="./js/text-up.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -86,7 +89,8 @@
                             <h1 class="enjoy-travelling-title">Насладись
                                 прогулкой в
                                 горах с командой единомышленников</h1>
-                            <form id="form-main" class="main-form" action="/submit"
+                            <form id="form-main" class="main-form"
+                                action="/submit"
                                 method="post" accept-charset="UTF-8">
                                 <div class="form-group dropdown">
                                     <button class="dropdown_button"> Локация для
@@ -122,12 +126,10 @@
                                 </div>
                                 <div class="form-group dropdown">
                                     <div class="wrapper-last-select">
-                                        <button class="dropdown_button">Выберите
-                                            количество участников</button>
+                                        <button class="dropdown_button">участники</button>
                                         <ul class="dropdown__list">
                                             <li class="dropdown__list-item"
-                                                data-value="quantity">Выберите
-                                                количество участников</li>
+                                                data-value="quantity">участники</li>
                                             <li class="dropdown__list-item"
                                                 data-value="4">4</li>
                                             <li class="dropdown__list-item"
@@ -165,8 +167,7 @@
                                 media="(min-width:651px)">
                             <img class=""
                                 src="./imgPC/mountains-picture.png"
-                                alt="фото
-                                гор">
+                                alt="фото гор">
                         </picture>
                     </div>
                     <div class="about-video">
@@ -174,20 +175,38 @@
                             <picture>
                                 <source
                                     srcset="./imgMobile/houseAndLandScapeMobile.png"
-                                    media="(max-width:699px)">
+                                    media="(max-width:899px)">
                                 <source
                                     srcset="./imgPC/houseForestLandScapePC.png"
-                                    media="(min-width:700px)">
-                                <img class="house-forest-LandScape"
+                                    media="(min-width:900px)">
+                                <img class="house-forest-landScape"
                                     src="./imgPC/houseForestLandScapePC.png"
                                     alt="видео">
                             </picture>
                         </div>
-                        <button id="button-video" class="about-video-btn"></button>
+                        <button id="openPopup" class="about-video-btn"></button>
+                        <div id="videoPopup" class="popup">
+                            <div class="popup-content">
+                                <button id="closePopup" class="close-btn"
+                                    title="Close">
+                                    <span class="close-cross"></span>
+                                </button>
+                                <iframe width="560" height="315"
+                                    id="iframe-video"
+                                    src="https://www.youtube.com/embed/YljByH-PaDc?si=DKEkujU22v8TThcK"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer;
+                                    autoplay; clipboard-write; encrypted-media;
+                                    gyroscope;
+                                    picture-in-picture; web-share"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <section class="description">
-                    <div class="two-titles-wrapper">
+                    <div class="two-titles-wrapper-common">
                         <h3 class="common-intro-style position">о нашем
                             походе</h3>
                         <h2 class="common-title-section
@@ -213,7 +232,7 @@
             <div class="gray-background">
                 <div class="offers">
                     <section class="wrapper-offer">
-                        <div class="two-titles-wrapper">
+                        <div class="two-titles-wrapper-common">
                             <h3 class="common-intro-style position">наше
                                 предложение</h3>
                             <h2 class="common-title-section
@@ -273,22 +292,30 @@
                     </section>
                     <div class="wrapper-pictures">
                         <ul class="list-pictures">
-                            <li class="picture-item"> <img
+                            <li class="picture-item">
+                                 <img width="250" height="250"
                                     src="./imgPC/ladnScapeTea.png" alt="вид с
                                     чаем
-                                    на реку" class="picture-from-tour"></li>
-                            <li class="picture-item"> <img
+                                    на реку" class="picture-from-tour">
+                                </li>
+                            <li class="picture-item">
+                                 <img width="250" height="250"
                                     src="./imgPC/canyons.png"
                                     alt="мужчина с клюшкой с видом на каньон"
-                                    class="picture-from-tour"></li>
-                            <li class="picture-item"> <img
+                                    class="picture-from-tour">
+                                </li>
+                            <li class="picture-item"> 
+                                <img width="250" height="250"
                                     src="./imgPC/snow.png"
                                     alt="мужчина на в снежных горах"
-                                    class="picture-from-tour"></li>
-                            <li class="picture-item"> <img
+                                    class="picture-from-tour">
+                                </li>
+                            <li class="picture-item">
+                                 <img width="250" height="250"
                                     src="./imgPC/greenMountains.png"
                                     alt="зеленые
-                                    горы" class="picture-from-tour"></li>
+                                    горы" class="picture-from-tour">
+                                </li>
                         </ul>
                     </div>
                 </div>
@@ -350,7 +377,7 @@
                                     рейтинга" class="picture-rating">
                                 <span class="rating-of-tour">4.5</span>
                             </div>
-                            <div class="description-popular-tour">
+                            <div class="description-popular-tour test-class">
                                 <div class="wrapper-title-price">
                                     <div class="wrapper-title-short-text">
                                         <h4 class="title-tour">
@@ -373,8 +400,7 @@
                                         "consectetur"и занялся его поисками в
                                         классической латинской литературе.
                                     </p>
-                                    <a href="#" class="link-the-programm
-                                        common-style-link">
+                                    <a href="#" class="link-the-programm common-style-link">
                                         Программа тура
                                     </a>
                                 </div>

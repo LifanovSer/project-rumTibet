@@ -30,7 +30,6 @@
 
 .wrapper-main-form {
     max-width: 1180px;
-    border-radius: 10px;
 }
 
 .main-form {
@@ -39,6 +38,7 @@
     background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(3px);
     padding: 40px;
+    border-radius: 10px;
 }
 
 .form-group {
@@ -269,7 +269,7 @@ body.lock {
     }
 
     .wrapper-last-select {
-        flex-shrink: 0;
+    flex-shrink: 0;
     width: 320px;
     }
 }
