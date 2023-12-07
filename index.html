@@ -7,6 +7,7 @@
         <meta name="description" content="this website is dedicated to traveling
             in the mountains">
         <title>Рум Тибет</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/book-journey.css">
@@ -23,6 +24,10 @@
         <script src="./js/select.js" defer></script>
         <script src="./js/open-video.js" defer></script>
         <script src="./js/text-up.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+        <script src="./js/swiper.js" defer></script>
+        <script src="./js/swiperImpressions.js" defer></script>
+        <script src="./js/swiper-photo-report.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -45,7 +50,7 @@
                     <ul class="nav-opportunities">
                         <li class="nav-item"> <a href="#">Главная</a></li>
                         <li class="nav-item"><a href="#">Про гида</a></li>
-                        <li class="nav-item"><a href="#">Программа тура </a></li>
+                        <li class="nav-item"><a href="#">Программа тура</a></li>
                         <li class="nav-item"><a href="#">Стоимость</a></li>
                         <li class="nav-item"><a href="#">Блог</a></li>
                         <li class="nav-item"><a href="#">Контакты</a></li>
@@ -84,7 +89,6 @@
             <div class="background">
                 <div class="promo-inner">
                     <section class="book-journey">
-
                         <div class="wrapper-main-form">
                             <h1 class="enjoy-travelling-title">Насладись
                                 прогулкой в
@@ -293,48 +297,48 @@
                     <div class="wrapper-pictures">
                         <ul class="list-pictures">
                             <li class="picture-item">
-                                 <img width="250" height="250"
+                                <img width="250" height="250"
                                     src="./imgPC/ladnScapeTea.png" alt="вид с
                                     чаем
                                     на реку" class="picture-from-tour">
-                                </li>
+                            </li>
                             <li class="picture-item">
-                                 <img width="250" height="250"
+                                <img width="250" height="250"
                                     src="./imgPC/canyons.png"
                                     alt="мужчина с клюшкой с видом на каньон"
                                     class="picture-from-tour">
-                                </li>
-                            <li class="picture-item"> 
+                            </li>
+                            <li class="picture-item">
                                 <img width="250" height="250"
                                     src="./imgPC/snow.png"
                                     alt="мужчина на в снежных горах"
                                     class="picture-from-tour">
-                                </li>
+                            </li>
                             <li class="picture-item">
-                                 <img width="250" height="250"
+                                <img width="250" height="250"
                                     src="./imgPC/greenMountains.png"
                                     alt="зеленые
                                     горы" class="picture-from-tour">
-                                </li>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <section class="popular-tours">
-                <div class="popular-tours-titles">
+                <div class="popular-tours-titles titles-position">
                     <h3 class="common-intro-style position">по версии
                         отдыхающих</h3>
                     <h2 class="common-title-section position-title-best">Популярные
                         направления</h2>
                 </div>
-
-                <ul class="popular-tours-list">
-                    <li class="popular-item">
-                        <div class="the-tour lake-near-mountains">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper swiper-wrapper-custom">
+                        <div class="swiper-slide the-tour lake-near-mountains">
                             <div class="wrapper-tour-rating">
                                 <img width="18" height="19"
-                                    src="./imgPC/star-rating.png" alt="звезда
+                                    src="./imgPC/star-rating.png"
+                                    alt="звезда
                                     рейтинга" class="picture-rating">
                                 <span class="rating-of-tour">4.9</span>
                             </div>
@@ -344,7 +348,8 @@
                                         <h4 class="title-tour">
                                             Озеро возле гор</h4>
                                         <span class="short-description">
-                                            романтическое приключение </span>
+                                            романтическое приключение
+                                        </span>
                                     </div>
                                     <a href="#" class="prise-of-tour">480 $</a>
                                 </div>
@@ -354,11 +359,13 @@
                                         классической латыни 45 года н.э., то
                                         есть
                                         более двух тысячелетий назад. Ричард
-                                        МакКлинток, профессор латыни из колледжа
+                                        МакКлинток, профессор латыни из
+                                        колледжа
                                         Hampden-Sydney, штат Вирджиния, взял
                                         одно из
                                         самых странных слов в Lorem Ipsum,
-                                        "consectetur"и занялся его поисками в
+                                        "consectetur"и занялся его поисками
+                                        в
                                         классической латинской литературе.
                                     </p>
                                     <a href="#" class="link-the-programm
@@ -368,16 +375,17 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="popular-item">
-                        <div class="the-tour night-in-mountains">
+
+                        <div class="swiper-slide the-tour night-in-mountains">
                             <div class="wrapper-tour-rating">
                                 <img width="18" height="19"
-                                    src="./imgPC/star-rating.png" alt="звезда
+                                    src="./imgPC/star-rating.png"
+                                    alt="звезда
                                     рейтинга" class="picture-rating">
                                 <span class="rating-of-tour">4.5</span>
                             </div>
-                            <div class="description-popular-tour test-class">
+                            <div class="description-popular-tour
+                                test-class">
                                 <div class="wrapper-title-price">
                                     <div class="wrapper-title-short-text">
                                         <h4 class="title-tour">
@@ -393,25 +401,28 @@
                                         классической латыни 45 года н.э., то
                                         есть
                                         более двух тысячелетий назад. Ричард
-                                        МакКлинток, профессор латыни из колледжа
+                                        МакКлинток, профессор латыни из
+                                        колледжа
                                         Hampden-Sydney, штат Вирджиния, взял
                                         одно из
                                         самых странных слов в Lorem Ipsum,
-                                        "consectetur"и занялся его поисками в
+                                        "consectetur"и занялся его поисками
+                                        в
                                         классической латинской литературе.
                                     </p>
-                                    <a href="#" class="link-the-programm common-style-link">
+                                    <a href="#" class="link-the-programm
+                                        common-style-link">
                                         Программа тура
                                     </a>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="popular-item">
-                        <div class="the-tour yoga-in-mountains">
+
+                        <div class="swiper-slide the-tour yoga-in-mountains">
                             <div class="wrapper-tour-rating">
                                 <img width="18" height="19"
-                                    src="./imgPC/star-rating.png" alt="звезда
+                                    src="./imgPC/star-rating.png"
+                                    alt="звезда
                                     рейтинга" class="picture-rating">
                                 <span class="rating-of-tour">5.0</span>
                             </div>
@@ -432,11 +443,13 @@
                                         классической латыни 45 года н.э., то
                                         есть
                                         более двух тысячелетий назад. Ричард
-                                        МакКлинток, профессор латыни из колледжа
+                                        МакКлинток, профессор латыни из
+                                        колледжа
                                         Hampden-Sydney, штат Вирджиния, взял
                                         одно из
                                         самых странных слов в Lorem Ipsum,
-                                        "consectetur"и занялся его поисками в
+                                        "consectetur"и занялся его поисками
+                                        в
                                         классической латинской литературе.
                                     </p>
                                     <a href="#" class="link-the-programm
@@ -446,8 +459,8 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
                 <button class="common-style-button size-rating-button">Рейтинг
                     направлений</button>
             </section>
@@ -455,23 +468,26 @@
 
             <div class="gray-background">
                 <section class="our-impressions">
-                    <div class="popular-tours-titles">
+                    <div class="popular-tours-titles centre-position">
                         <h3 class="common-intro-style position">делимся
                             впечатлениями</h3>
                         <h2 class="common-title-section position-title-best">Блог
                             о путешествиях</h2>
                     </div>
-                    <ul class="impressions-list">
-                        <li class="impression-item">
-                            <article class="box-tips">
+
+                    <div class="swiper mySwiperimpressions custom-options">
+                        <div class="swiper-wrapper swiper-wrapper-custom-second impressions-list">
+
+                            <!-- <div class="swiper-slide impression-item"> -->
+                            <article class="swiper-slide box-tips">
                                 <div class="wrapper-img">
                                     <picture>
                                         <source
                                             srcset="./imgMobile/italiaMobile.png"
-                                            media="(max-width:699px)">
+                                            media="(max-width:1170px)">
                                         <source
                                             srcset="./imgPC/italyPc.png"
-                                            media="(min-width:700px)">
+                                            media="(min-width:1171px)">
                                         <img class="article-picture"
                                             src="./imgPC/italyPc.png"
                                             alt="фото Италии">
@@ -479,7 +495,8 @@
                                 </div>
                                 <div class="wrapper-for-information">
                                     <h2 class="title-article">
-                                        Красивая Италия, какая она в реальности?
+                                        Красивая Италия, какая она в
+                                        реальности?
                                     </h2>
                                     <p class="short-introduction">
                                         Для современного мира базовый вектор
@@ -487,24 +504,30 @@
                                         способы реализации соответствующих
                                         условий активизации.
                                     </p>
-                                    <div class="wrapper-details">
+                                    <div class="wrapper-details-inside">
                                         <span class="date">01/04/2023</span>
                                         <a href="#" class="read-article">читать
                                             статью</a>
                                     </div>
+
+                                </div>
+                                <div class="wrapper-details">
+                                    <span class="date">01/04/2023</span>
+                                    <a href="#" class="read-article">читать
+                                        статью</a>
                                 </div>
                             </article>
-                        </li>
-                        <li class="impressions-item">
-                            <article class="box-tips">
+                            <!-- </div> -->
+                            <!-- <div class="swiper-slide impressions-item"> -->
+                            <article class="swiper-slide box-tips">
                                 <div class="wrapper-img">
                                     <picture>
                                         <source
                                             srcset="./imgMobile/aircraftWingmobile.png"
-                                            media="(max-width:699px)">
+                                            media="(max-width:1170px)">
                                         <source
                                             srcset="./imgPC/aircrafWingPC.png"
-                                            media="(min-width:700px)">
+                                            media="(min-width:1171px)">
                                         <img class="article-picture"
                                             src="./imgPC/aircrafWingPC.png"
                                             alt="logo">
@@ -512,33 +535,41 @@
                                 </div>
                                 <div class="wrapper-for-information">
                                     <h2 class="title-article">
-                                        Долой сомнения! Весь мир открыт для вас!
+                                        Долой сомнения! Весь мир открыт для
+                                        вас!
                                     </h2>
                                     <p class="short-introduction">
                                         Для современного мира базовый вектор
                                         развития предполагает независимые
                                         способы реализации соответствующих
                                         условий активизации ... независимые
-                                        способы реализации соответствующих усл
+                                        способы реализации соответствующих
+                                        условий
                                     </p>
-                                    <div class="wrapper-details">
+                                    <div class="wrapper-details-inside">
                                         <span class="date">01/04/2023</span>
                                         <a href="#" class="read-article">читать
                                             статью</a>
                                     </div>
+
+                                </div>
+                                <div class="wrapper-details">
+                                    <span class="date">01/04/2023</span>
+                                    <a href="#" class="read-article">читать
+                                        статью</a>
                                 </div>
                             </article>
-                        </li>
-                        <li class="impressions-item">
-                            <article class="box-tips">
+                            <!-- </div> -->
+                            <!-- <div class="swiper-slide impressions-item"> -->
+                            <article class="swiper-slide box-tips">
                                 <div class="wrapper-img">
                                     <picture>
                                         <source
                                             srcset="./imgMobile/preparationMObile.png"
-                                            media="(max-width:699px)">
+                                            media="(max-width:1170px)">
                                         <source
                                             srcset="./imgPC/preparationPC.png"
-                                            media="(min-width:700px)">
+                                            media="(min-width:1171px)">
                                         <img class="article-picture"
                                             src="./imgPC/preparationPC.png"
                                             alt="подготовка к путешествию">
@@ -553,24 +584,29 @@
                                         Для современного мира базовый вектор
                                         развития предполагает.
                                     </p>
-                                    <div class="wrapper-details">
+                                    <div class="wrapper-details-inside">
                                         <span class="date">01/04/2023</span>
                                         <a href="#" class="read-article">читать
                                             статью</a>
                                     </div>
                                 </div>
+                                <div class="wrapper-details">
+                                    <span class="date">01/04/2023</span>
+                                    <a href="#" class="read-article">читать
+                                        статью</a>
+                                </div>
                             </article>
-                        </li>
-                        <li class="impressions-item">
-                            <article class="box-tips">
+                            <!-- </div> -->
+                            <!-- <div class="swiper-slide impressions-item"> -->
+                            <article class="swiper-slide box-tips">
                                 <div class="wrapper-img">
                                     <picture>
                                         <source
                                             srcset="./imgMobile/indiaMobile.png"
-                                            media="(max-width:699px)">
+                                            media="(max-width:1170px)">
                                         <source
                                             srcset="./imgPC/indiaPC.png"
-                                            media="(min-width:700px)">
+                                            media="(min-width:1171px)">
                                         <img class="article-picture"
                                             src="./imgPC/indiaPC.png"
                                             alt="тадж махал">
@@ -582,18 +618,27 @@
                                     </h2>
 
                                     <p class="short-introduction">
-                                        Для современного мира базовый.
+                                        Для современного мира базовый вектор
+                                        развития предполагает независимые
+                                        способы реализации соответствующих
+                                        условий активизации.
                                     </p>
-                                    <div class="wrapper-details">
+                                    <div class="wrapper-details-inside">
                                         <span class="date">01/04/2023</span>
                                         <a href="#" class="read-article">читать
                                             статью</a>
                                     </div>
 
                                 </div>
+                                <div class="wrapper-details">
+                                    <span class="date">01/04/2023</span>
+                                    <a href="#" class="read-article">читать
+                                        статью</a>
+                                </div>
                             </article>
-                        </li>
-                    </ul>
+                            <!-- </div> -->
+                        </div>
+                    </div>
                     <a class="common-style-link other-materials">Другие
                         материалы</a>
                 </section>
@@ -605,109 +650,102 @@
                     <h2 class="common-title-section position-title-best">Делимся
                         впечатлениями</h2>
                 </div>
-                <ul class="photo-report-list">
 
-                    <li class="first-line-item">
 
-                        <ul class="first-list-of-pictures">
-                            <li class="photo-report-item grid-item1">
-                                <picture>
-                                    <source
-                                        srcset="./imgMobile/airBalloonMobile.png"
-                                        media="(max-width:699px)">
-                                    <source
-                                        srcset="./imgPC/airBalloonPC.png"
-                                        media="(min-width:700px)">
-                                    <img class="picture-from-photo-report"
-                                        src="./imgPC/airBalloonPC.png"
-                                        alt="вид на воздушные шары">
-                                </picture>
-                            </li>
-                            <li class="photo-report-item grid-item2">
-                                <picture>
-                                    <source
-                                        srcset="./imgMobile/mapAndThingsPC.png"
-                                        media="(max-width:699px)">
-                                    <source
-                                        srcset="./imgPC/mapAndThingsPC.png"
-                                        media="(min-width:700px)">
-                                    <img class="picture-from-photo-report"
-                                        src="./imgPC/mapAndThingsPC.png"
-                                        alt="вещи для путешесвтий которые лежат
-                                        на
-                                        карте">
-                                </picture>
-                            </li>
-                            <li class="photo-report-item grid-item3">
-                                <picture>
-                                    <source
-                                        srcset="./imgMobile/sidneyPC.png"
-                                        media="(max-width:699px)">
-                                    <source
-                                        srcset="./imgPC/sidneyPC.png"
-                                        media="(min-width:700px)">
-                                    <img class="picture-from-photo-report"
-                                        src="./imgPC/sidneyPC.png"
-                                        alt=" башня сидней">
-                                </picture>
-                            </li>
-                        </ul>
-                    </li>
+                <div class="swiper mySwiperphotoReport custom-options-for-photos">
+                    <div class="swiper-wrapper swiper-wrapper-custom-third photo-report-list">
 
-                    <li>
-
-                        <ul class="second-list-of-pictures">
-                            <li class="photo-report-item grid-item4">
-                                <picture>
-                                    <source
-                                        srcset="./imgMobile/beachPC.png"
-                                        media="(max-width:699px)">
-                                    <source
-                                        srcset="./imgPC/beachPC.png"
-                                        media="(min-width:700px)">
-                                    <img class="picture-from-photo-report"
-                                        src="./imgPC/beachPC.png"
-                                        alt="вид на пляж с лодками сверху">
-                                </picture>
-                            </li>
-                            <li class="photo-report-item grid-item5">
-                                <picture>
-                                    <source
-                                        srcset="./imgMobile/stoneСanyonPC.png"
-                                        media="(max-width:699px)">
-                                    <source
-                                        srcset="./imgPC/stoneСanyonPC.png"
-                                        media="(min-width:700px)">
-                                    <img class="picture-from-photo-report"
-                                        src="./imgPC/stoneСanyonPC.png"
-                                        alt="вид на каменный каньон">
-                                </picture>
-                            </li>
-                            <li class="photo-report-item grid-item6">
-                                <picture>
-                                    <source
-                                        srcset="./imgMobile/oldThingsPC.png"
-                                        media="(max-width:699px)">
-                                    <source
-                                        srcset="./imgPC/oldThingsPC.png"
-                                        media="(min-width:700px)">
-                                    <img class="picture-from-photo-report"
-                                        src="./imgPC/indiaPC.png"
-                                        alt="фото сверху на старые вещи для
-                                        путешесвтий">
-                                </picture>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                        <div class="swiper-slide photo-report-item big-picture">
+                            <picture>
+                                <source
+                                    srcset="./imgMobile/airBalloonMobile.png"
+                                    media="(max-width:600px)">
+                                <source
+                                    srcset="./imgPC/airBalloonPC.png"
+                                    media="(min-width:601px)">
+                                <img class="picture-from-photo-report"
+                                    src="./imgPC/airBalloonPC.png"
+                                    alt="вид на воздушные шары">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide photo-report-item">
+                            <picture>
+                                <source
+                                    srcset="./imgMobile/mapAndThingsPC.png"
+                                    media="(max-width:699px)">
+                                <source
+                                    srcset="./imgPC/mapAndThingsPC.png"
+                                    media="(min-width:700px)">
+                                <img class="picture-from-photo-report"
+                                    src="./imgPC/mapAndThingsPC.png"
+                                    alt="вещи для путешесвтий которые лежат на карте">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide photo-report-item">
+                            <picture>
+                                <source
+                                    srcset="./imgMobile/sidneyPC.png"
+                                    media="(max-width:699px)">
+                                <source
+                                    srcset="./imgPC/sidneyPC.png"
+                                    media="(min-width:700px)">
+                                <img class="picture-from-photo-report"
+                                    src="./imgPC/sidneyPC.png"
+                                    alt=" башня сидней">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide photo-report-item">
+                            <picture>
+                                <source
+                                    srcset="./imgMobile/beachPC.png"
+                                    media="(max-width:699px)">
+                                <source
+                                    srcset="./imgPC/beachPC.png"
+                                    media="(min-width:700px)">
+                                <img class="picture-from-photo-report"
+                                    src="./imgPC/beachPC.png"
+                                    alt="вид на пляж с лодками сверху">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide photo-report-item big-picture">
+                            <picture>
+                                <source
+                                    srcset="./imgMobile/stoneСanyonPC.png"
+                                    media="(max-width:600px)">
+                                <source
+                                    srcset="./imgPC/stoneСanyonPC.png"
+                                    media="(min-width:601px)">
+                                <img class="picture-from-photo-report"
+                                    src="./imgPC/stoneСanyonPC.png"
+                                    alt="вид на каменный каньон">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide photo-report-item">
+                            <picture>
+                                <source
+                                    srcset="./imgMobile/oldThingsPC.png"
+                                    media="(max-width:699px)">
+                                <source
+                                    srcset="./imgPC/oldThingsPC.png"
+                                    media="(min-width:700px)">
+                                <img class="picture-from-photo-report"
+                                    src="./imgPC/indiaPC.png"
+                                    alt="фото сверху на старые вещи для
+                                    путешесвтий">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
                 <a class="common-style-link">Наш pinterest</a>
             </section>
 
             <div class="get-useful-mailing">
                 <div class="useful-titles">
-                    <h3 class="common-intro-style position">актуально</h3>
+                    <h3 class="common-intro-style actual-title">актуально</h3>
+                    <h3 class="photo-report-title">фото-отчет</h3>
                     <h2 class="common-title-section useful-title-best">Получайте
                         полезные рассылки о путешествиях</h2>
+                        <h2 class="title-for-mobile">Делимся впечатлениями</h2>
                 </div>
                 <div class="wrapper-form-email-mailing">
                     <div class="wrapper-email-form">
@@ -731,8 +769,6 @@
                         условиями обработки персональных данных и правилами
                         рекламных рассылок
                     </a>
-
-
                 </div>
             </div>
         </main>

@@ -1,11 +1,10 @@
 .wrapper-dark-blue {
     background-color: #1A3E3E;
     width: 100%;
-    padding-top: 200px;
-    padding-bottom: 80px;
     position: relative;
     z-index: 15;
     color: #F3F5F4;
+    padding: 200px 16px 80px 16px;
 }
 
 .footer-finish-info {
@@ -74,4 +73,33 @@
     display: flex;
     justify-content: space-between;
     color: #FFFFFF;
+    padding: 0px 15px;
+}
+
+
+@media (max-width:1150px) {
+
+    .footer-finish-info {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+
+@media (max-width:765px)  {
+
+    .list-last-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width:700px)  {
+
+    .wrapper-dark-blue {
+        padding-top: 50px;
+    }
+
 }

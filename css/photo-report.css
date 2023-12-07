@@ -1,58 +1,91 @@
 .photo-report {
-    max-width: 1180px;
-    width: 100%;
-    margin: 80px auto 220px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 80px auto 220px;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .photo-titles {
-    text-align: center;
+  text-align: center;
 }
 
-.photo-report-list {
+.swiper-wrapper.swiper-wrapper-custom-third.photo-report-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
+.swiper-slide.photo-report-item {
+  min-width: 280px;
+}
+
+.swiper-slide.photo-report-item:nth-child(1) {
+  min-width: 580px;
+}
+
+.swiper-slide.photo-report-item:nth-child(5) {
+  min-width: 580px;
+}
+
+/* .wiper-slide.photo-report-item.big-picture {
+  min-width: 580px;
+} */
 
 .first-list-of-pictures {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
-
 
 .second-list-of-pictures {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.grid-item4 {
-    width: 280px;
+/* 
+@media (max-width: 1200px) and (min-width: 900px) {
+    .photo-report-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .photo-report-list {
+        flex-wrap: nowrap;
+    }
 }
 
+ */
 
+@media (max-width: 1200px) {
+  .swiper-wrapper.swiper-wrapper-custom-third.photo-report-list {
+    flex-wrap: nowrap;
+  }
 
+  .swiper-slide.photo-report-item {
+    max-width: 280px;
+  }
+}
 
+@media (max-width: 600px) {
+  /* .swiper-slide.photo-report-item:nth-child(1) {
+    max-width: 280px;
+  }
 
+  .swiper-slide.photo-report-item:nth-child(5) {
+    max-width: 280px;
+  } */
 
-
-
-
-
-
-
-
-
-
-
-
+  .wiper-slide.photo-report-item.big-picture {
+    max-width: 280px;
+  }
+}
 
 
 
@@ -110,29 +143,6 @@
     height: 250px;
 } */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* .photo-report-item picture {
     width: 100%;
     height: 100%;
@@ -143,8 +153,6 @@
     width: 100%; 
     height: auto;
 } */
-
-
 
 /* .photo-report-list .photo-report-item:nth-child(1) {
     max-width: 680px;

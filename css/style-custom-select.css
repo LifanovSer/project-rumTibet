@@ -96,3 +96,11 @@
   .dropdown__input-hidden {
     display: none;
   }
+
+  @media (max-width:1140px) {
+    .dropdown_button {
+      width: 200px;
+    }
+   
+  }
+  
