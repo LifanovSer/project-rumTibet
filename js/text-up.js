@@ -3,7 +3,6 @@ const itemTours = document.querySelectorAll(".the-tour");
 console.log(itemTours);
 
 itemTours.forEach(function (liTour) {
-  console.log(liTour);
   //   const theTour = liTour.querySelector(".the-tour");
   const descriptionTour = liTour.querySelector(".description-popular-tour");
 

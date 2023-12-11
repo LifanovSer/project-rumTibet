@@ -12,6 +12,7 @@
 
 .photo-titles {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .swiper-wrapper.swiper-wrapper-custom-third.photo-report-list {
@@ -47,6 +48,10 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+.pinterest-position {
+  margin: 50px auto 0px auto;
 }
 
 /* 

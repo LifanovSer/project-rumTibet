@@ -116,7 +116,7 @@
     padding-left: 10px;
 }
 
-.nav-opportunities-mobile {
+.header__nav-opportunities-mobile {
     display: none;
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
@@ -164,7 +164,6 @@ body.lock {
     }
    
 }
-
 
 
 @media (max-width: 1010px) {
@@ -246,7 +245,7 @@ body.lock {
        left: 0;
     }
 
-    .nav-opportunities-mobile {
+    .header__nav-opportunities-mobile {
         display: flex;
         flex-direction: column;
     }
@@ -256,6 +255,24 @@ body.lock {
         display: flex;
         gap: 10px;
         cursor: pointer;
+    }
+
+    .header__arrow {
+        margin-right: 0px;
+        width: 16px;
+        height: 10px;
+        fill: #fff;
+        transition: all .1s;
+        align-self: center;
+    }
+
+    .nav-item:hover {
+        color: orange;
+        text-decoration:underline;
+    }
+    
+    .nav-item:hover .header__arrow use {
+        fill: orange;
     }
 
     .nav.active .nav-item {
@@ -331,63 +348,3 @@ body.lock {
         font-size: 25px;
     }
 }
-
-
-    /* .nav-opportunities {
-        display: none;
-    }
-
-    .menu-btn {
-        display: flex;
-        gap: 8px;
-        cursor: pointer;
-        flex-direction: column;
-        width: 45px;
-        height: 40px;
-        border: none;
-        background-color: transparent;
-    }
-
-    .menu-btn span {
-        height: 5px;
-        width: 100%;
-        background-color: #FDFDFD;
-        border-radius: 10px;
-    }
-
-    .menu-btn span:last-child {
-        width: 50%;
-        align-self: flex-end;
-    }
-
-    .nav-opportunities-mobile.menu-open {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #1A3E3E;
-        transition: all 0.5s ease, opacity 0.3s ease;
-        height: 100vh;
-        z-index: 60;
-        margin: 0;
-        padding: 50px 16px;
-    }
-
-    .nav-item {
-        display: flex;
-        gap: 10px;
-    }
-
-    .remove-button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .item-button {
-        align-self: flex-end;
-    } */
