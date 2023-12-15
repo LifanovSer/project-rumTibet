@@ -1,0 +1,92 @@
+.introduction__popup {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1e4242;
+  z-index: 9999;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.introduction__popup.open {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 0.3s;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.open-popup {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.introduction__popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 50vw;
+  height: 30vw;
+}
+
+.introduction__close-btn {
+  position: absolute;
+  top: -35px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 25px;
+  height: 20px;
+}
+
+.introduction__close-btn::after,
+.introduction__close-btn .introduction__close-cross {
+  left: 0;
+  height: 10%;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  transition: background-color 0.4s;
+}
+
+.introduction__close-btn::after {
+  content: "";
+  bottom: 0;
+}
+
+.introduction__close-btn::after {
+  top: 50%;
+  transform: rotate(45deg) translate(0px, -50%);
+}
+
+.introduction__close-btn .introduction__close-cross {
+  top: 50%;
+  transform: rotate(-45deg) translate(0px, -50%);
+}
+
+.introduction__close-btn:hover .introduction__close-cross,
+.introduction__close-btn:hover::after {
+  background-color: gray;
+  transition: background-color 0.4s;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,156 @@
+.popular-tours {
+    max-width: 1180px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin: 80px auto;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.popular-tours__titles-position {
+    margin-bottom: 50px;
+}
+
+.swiper .swiper-wrapper .swiper-slide.popular-tours__the-tour {
+    border-radius: 32px;
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.popular-tours__titles {
+    text-align: center;
+}
+
+.popular-tours__swiper-wrapper {
+    display: flex;
+    padding: 0px 0px;
+}
+
+.popular-tours__wrapper-tour-rating {
+    display: flex;
+    width: 65px;
+    padding: 4px 8px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px 0px 0px 4px;
+    background: rgba(253, 253, 253, 0.4);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.popular-tours__size-rating-button {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 16px 36px;
+    margin: 50px auto 0 auto;
+}
+
+.popular-tours__description {
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    min-height: 500px;
+    padding: 30px 15px 20px 15px;
+    color: #fdfdfd;
+    transform: translateY(450px);
+    transition: transform 1.9s;
+}
+
+.popular-tours__move_description {
+    transform: translateY(0px);
+    transition: transform 1.9s;
+}
+
+.popular-tours__wrapper-title-short-text {
+    line-height: 25px;
+}
+
+.popular-tours__wrapper-title-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-tours__title-tour {
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+.popular-tours__rating-of-tour {
+    font-size: 14px;
+}
+
+.popular-tours__prise-of-tour {
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 86px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    align-self: center;
+    margin-right: 25px;
+}
+
+.popular-tours__short-description {
+    font-size: 14px;
+}
+
+.popular-tours__text-description-and-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 150px;
+}
+
+.popular-tours__link-the-program {
+    max-width: 130px;
+}
+
+.popular-tours__text-popular-tour {
+    font-size: 1rem;
+    width: 90%;
+}
+
+.swiper.mySwiper {
+    align-self: flex-start;
+}
+
+.popular-tours__lake-near-mountains {
+    background-image: url(../img/imgPC/the-in-mountains.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.night-in-mountains {
+    background-image: url(../img/imgPC/at-the-mountains.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.yoga-in-mountains {
+    background-image: url(../img/imgPC/yoga-in-mountains.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media (max-width: 1000px) {
+    .popular-tours__title-tour {
+        margin: 0px;
+        font-size: 18px;
+    }
+}

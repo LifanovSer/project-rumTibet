@@ -1,0 +1,54 @@
+.offers {
+  max-width: 1180px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+.offers__wrapper-offers {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.offers__program-description {
+  display: flex;
+  gap: 20px;
+}
+
+.offers__title-description {
+  margin: 0;
+}
+.offers__text-description {
+  margin: 0;
+  font-size: 0.875rem;
+  max-width: 514px;
+}
+.offers__prise-of-program {
+  max-width: 236px;
+  padding: 16px 36px;
+}
+
+.offers__pictures-list {
+  display: grid;
+  grid-template-columns: auto auto; /* Две колонны, размером с содержимое */
+  grid-template-rows: auto auto; /* Два ряда, размером с содержимое */
+  gap: 10px; /* Расстояние между элементами сетки */
+  padding: 0; /* Обнуляем внутренние отступы */
+}
+
+.offers__picture-from-tour {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .offers__wrapper-pictures {
+    display: none;
+  }
+
+  .offers__prise-of-program {
+    align-self: center;
+  }
+}

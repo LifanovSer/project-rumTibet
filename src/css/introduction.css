@@ -1,0 +1,105 @@
+.introduction {
+  max-width: 1180px;
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  gap: 245px;
+}
+
+.introduction__media-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.introduction__about-mountains {
+  max-width: 350px;
+  max-height: 400px;
+}
+
+.introduction__video {
+  position: absolute;
+  max-width: 350px;
+  max-height: 400px;
+  z-index: 10;
+  left: 40%;
+  top: 130px;
+}
+
+.introduction__video .introduction__video-btn {
+  background-image: url(../img/imgPC/button-play-main.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.4s ease;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.introduction__video-btn:hover {
+  transform: translate(-50%, -50%) scale(1.3);
+}
+
+.introduction__tour-description {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 65px;
+  padding: 0px 15px;
+}
+
+.introduction__button-size {
+  padding: 16px 36px;
+}
+
+@media (max-width: 900px) {
+  .introduction {
+    flex-direction: column-reverse;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .introduction__tour-description {
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .introduction__media-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .introduction__media-wrapper .introduction__about-mountains:nth-child(1) {
+    display: none;
+  }
+
+  .introduction__video {
+    position: relative;
+    max-width: 360px;
+    max-height: 420px;
+    z-index: 0;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .introduction__wrapper-for-video {
+    padding: 10px;
+  }
+
+  .introduction__house-forest-landScape{
+    max-width: 100%;
+    height: auto;
+  }
+  .introduction__tour-description {
+    margin-top: 0px;
+  }
+}
