@@ -1,6 +1,7 @@
 .popular-tours {
     max-width: 1180px;
     width: 100%;
+    padding: 0px 10px;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
@@ -147,10 +148,12 @@
     background-position: center;
 }
 
-
 @media (max-width: 1000px) {
     .popular-tours__title-tour {
         margin: 0px;
         font-size: 18px;
     }
 }
+
+
+

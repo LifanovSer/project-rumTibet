@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite", 
+    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,8 @@
   "dependencies": {
     "swiper": "^11.0.5",
     "vite": "^5.0.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

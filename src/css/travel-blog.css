@@ -1,6 +1,7 @@
 .travel-blog {
   max-width: 1180px;
   width: 100%;
+  padding: 0px 10px;
   flex-direction: column;
   justify-content: center;
   margin: 80px auto;
